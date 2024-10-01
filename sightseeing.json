@@ -1217,7 +1217,7 @@
                   34.87722222
                 ]
               },
-              "StreamGauge": 0.11,
+              "StreamGauge": 0.1,
               "StreamGaugeLevel": "2",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge02"
@@ -1241,7 +1241,7 @@
                   34.86583333
                 ]
               },
-              "StreamGauge": -0.02,
+              "StreamGauge": -0.01,
               "StreamGaugeLevel": "3",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge03"
@@ -1289,7 +1289,7 @@
                   34.88611111
                 ]
               },
-              "StreamGauge": 0.35,
+              "StreamGauge": 0.36,
               "StreamGaugeLevel": "5",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge05"
@@ -1313,7 +1313,7 @@
                   34.89805556
                 ]
               },
-              "StreamGauge": 0.1,
+              "StreamGauge": 0.09,
               "StreamGaugeLevel": "0",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge_disabled"
@@ -1337,7 +1337,7 @@
                   34.82333333
                 ]
               },
-              "StreamGauge": 0.14,
+              "StreamGauge": 0.15,
               "StreamGaugeLevel": "0",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge_disabled"
@@ -1361,7 +1361,7 @@
                   34.94277778
                 ]
               },
-              "StreamGauge": 0.1,
+              "StreamGauge": 0.09,
               "StreamGaugeLevel": "0",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge_disabled"
@@ -1433,7 +1433,7 @@
                   35.10944444
                 ]
               },
-              "StreamGauge": null,
+              "StreamGauge": 0.33,
               "StreamGaugeLevel": "0",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge_disabled"
@@ -1625,7 +1625,7 @@
                   34.864095
                 ]
               },
-              "StreamGauge": -1.68,
+              "StreamGauge": -1.66,
               "StreamGaugeLevel": "0",
               "StreamGaugeType": "危機管理型水位計",
               "iconImage": "StreamGauge_disabled"
@@ -21510,24 +21510,111 @@
       }
     },
     {
-      "id": "ふじのくに/観光施設等一覧",
-      "type": "circle",
-      "source": "SightseeingMapStore",
-      "layout": {
-        "visibility": "visible"
+      "id": "交通分析ダッシュボード-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "53_交通分析ダッシュボード",
+      "metadata": {
+        "menuId": "交通分析ダッシュボード"
       },
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
       "paint": {
-        "circle-color": [
-          "get",
-          "color"
+        "fill-color": "#38bc19",
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "交通分析ダッシュボード-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "53_交通分析ダッシュボード",
+      "metadata": {
+        "menuId": "交通分析ダッシュボード"
+      },
+      "filter": [
+        "==",
+        [
+          "geometry-type"
         ],
-        "circle-opacity": 0.5,
+        "Polygon"
+      ],
+      "paint": {
+        "line-color": "#38bc19",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          0.5,
+          20,
+          3
+        ],
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "交通分析ダッシュボード-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "53_交通分析ダッシュボード",
+      "metadata": {
+        "menuId": "交通分析ダッシュボード"
+      },
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "#38bc19",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1,
+          20,
+          5
+        ]
+      }
+    },
+    {
+      "id": "交通分析ダッシュボード-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "53_交通分析ダッシュボード",
+      "metadata": {
+        "menuId": "交通分析ダッシュボード"
+      },
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "paint": {
+        "circle-color": "#38bc19",
+        "circle-radius": 7,
         "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
+        "circle-stroke-color": "#fff",
+        "circle-opacity": 0.8
       }
     }
   ]

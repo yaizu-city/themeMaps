@@ -1030,9 +1030,9 @@
                   34.9375
                 ]
               },
-              "Precipitation": null,
-              "Precipitation10min": null,
-              "Precipitation1hr": null,
+              "Precipitation": 0,
+              "Precipitation10min": 0,
+              "Precipitation1hr": 0,
               "PrecipitationLevel1hr": "1",
               "iconImage": "marker_umbrella_disabled"
             }
@@ -1169,7 +1169,7 @@
                   34.88416667
                 ]
               },
-              "StreamGauge": -2.23,
+              "StreamGauge": -2.24,
               "StreamGaugeLevel": "0",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge_disabled"
@@ -1193,7 +1193,7 @@
                   34.82722222
                 ]
               },
-              "StreamGauge": null,
+              "StreamGauge": -0.56,
               "StreamGaugeLevel": "1",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge01"
@@ -1217,7 +1217,7 @@
                   34.87722222
                 ]
               },
-              "StreamGauge": 0.12,
+              "StreamGauge": 0.1,
               "StreamGaugeLevel": "2",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge02"
@@ -1241,7 +1241,7 @@
                   34.86583333
                 ]
               },
-              "StreamGauge": -0.02,
+              "StreamGauge": -0.01,
               "StreamGaugeLevel": "3",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge03"
@@ -1289,7 +1289,7 @@
                   34.88611111
                 ]
               },
-              "StreamGauge": 0.35,
+              "StreamGauge": 0.36,
               "StreamGaugeLevel": "5",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge05"
@@ -1337,7 +1337,7 @@
                   34.82333333
                 ]
               },
-              "StreamGauge": 0.14,
+              "StreamGauge": 0.15,
               "StreamGaugeLevel": "0",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge_disabled"
@@ -1361,7 +1361,7 @@
                   34.94277778
                 ]
               },
-              "StreamGauge": 0.12,
+              "StreamGauge": 0.09,
               "StreamGaugeLevel": "0",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge_disabled"
@@ -1433,7 +1433,7 @@
                   35.10944444
                 ]
               },
-              "StreamGauge": null,
+              "StreamGauge": 0.33,
               "StreamGaugeLevel": "0",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge_disabled"
@@ -1481,7 +1481,7 @@
                   34.83111111
                 ]
               },
-              "StreamGauge": null,
+              "StreamGauge": 0.5,
               "StreamGaugeLevel": "0",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge_disabled"
@@ -1625,7 +1625,7 @@
                   34.864095
                 ]
               },
-              "StreamGauge": -1.68,
+              "StreamGauge": -1.66,
               "StreamGaugeLevel": "0",
               "StreamGaugeType": "危機管理型水位計",
               "iconImage": "StreamGauge_disabled"
@@ -21510,12 +21510,12 @@
       }
     },
     {
-      "id": "ふじのくに/イベント一覧-Polygon",
+      "id": "路線網図/その他路線未_L-Polygon",
       "type": "fill",
       "source": "menu-experiment",
-      "source-layer": "EventList",
+      "source-layer": "路線_660_その他路線未_L",
       "metadata": {
-        "menuId": "ふじのくに/イベント一覧"
+        "menuId": "路線網図/その他路線未_L"
       },
       "filter": [
         "==",
@@ -21525,17 +21525,17 @@
         "Polygon"
       ],
       "paint": {
-        "fill-color": "#9c2c5e",
+        "fill-color": "#8166be",
         "fill-opacity": 0.7
       }
     },
     {
-      "id": "ふじのくに/イベント一覧-Polygon-outline",
+      "id": "路線網図/その他路線未_L-Polygon-outline",
       "type": "line",
       "source": "menu-experiment",
-      "source-layer": "EventList",
+      "source-layer": "路線_660_その他路線未_L",
       "metadata": {
-        "menuId": "ふじのくに/イベント一覧"
+        "menuId": "路線網図/その他路線未_L"
       },
       "filter": [
         "==",
@@ -21545,7 +21545,7 @@
         "Polygon"
       ],
       "paint": {
-        "line-color": "#9c2c5e",
+        "line-color": "#8166be",
         "line-width": [
           "interpolate",
           [
@@ -21563,12 +21563,12 @@
       }
     },
     {
-      "id": "ふじのくに/イベント一覧-LineString",
+      "id": "路線網図/その他路線未_L-LineString",
       "type": "line",
       "source": "menu-experiment",
-      "source-layer": "EventList",
+      "source-layer": "路線_660_その他路線未_L",
       "metadata": {
-        "menuId": "ふじのくに/イベント一覧"
+        "menuId": "路線網図/その他路線未_L"
       },
       "filter": [
         "==",
@@ -21578,7 +21578,7 @@
         "LineString"
       ],
       "paint": {
-        "line-color": "#9c2c5e",
+        "line-color": "#8166be",
         "line-width": [
           "interpolate",
           [
@@ -21595,12 +21595,12 @@
       }
     },
     {
-      "id": "ふじのくに/イベント一覧-Point",
+      "id": "路線網図/その他路線未_L-Point",
       "type": "circle",
       "source": "menu-experiment",
-      "source-layer": "EventList",
+      "source-layer": "路線_660_その他路線未_L",
       "metadata": {
-        "menuId": "ふじのくに/イベント一覧"
+        "menuId": "路線網図/その他路線未_L"
       },
       "filter": [
         "==",
@@ -21610,7 +21610,7 @@
         "Point"
       ],
       "paint": {
-        "circle-color": "#9c2c5e",
+        "circle-color": "#8166be",
         "circle-radius": 7,
         "circle-stroke-width": 2,
         "circle-stroke-color": "#fff",
@@ -21618,45 +21618,219 @@
       }
     },
     {
-      "id": "ふじのくに/イベント一覧",
-      "type": "circle",
-      "source": "EventList",
-      "layout": {
-        "visibility": "visible"
+      "id": "路線網図/2級路線番号_S-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "路線_623_2級路線番号_S",
+      "metadata": {
+        "menuId": "路線網図/2級路線番号_S"
       },
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
       "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
+        "fill-color": "#dd8184",
+        "fill-opacity": 0.7
       }
     },
     {
-      "id": "ふじのくに/イベント詳細一覧",
-      "type": "circle",
-      "source": "EventDetail",
-      "layout": {
-        "visibility": "visible"
+      "id": "路線網図/2級路線番号_S-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "路線_623_2級路線番号_S",
+      "metadata": {
+        "menuId": "路線網図/2級路線番号_S"
       },
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
       "paint": {
-        "circle-color": [
-          "get",
-          "color"
+        "line-color": "#dd8184",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          0.5,
+          20,
+          3
         ],
-        "circle-opacity": 0.5,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "路線網図/2級路線番号_S-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "路線_623_2級路線番号_S",
+      "metadata": {
+        "menuId": "路線網図/2級路線番号_S"
+      },
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "#dd8184",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1,
+          20,
+          5
+        ]
+      }
+    },
+    {
+      "id": "路線網図/2級路線番号_S-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "路線_623_2級路線番号_S",
+      "metadata": {
+        "menuId": "路線網図/2級路線番号_S"
+      },
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "paint": {
+        "circle-color": "#dd8184",
+        "circle-radius": 7,
         "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
+        "circle-stroke-color": "#fff",
+        "circle-opacity": 0.8
+      }
+    },
+    {
+      "id": "路線網図/その他路線番号_S-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "路線_633_その他路線番号_S",
+      "metadata": {
+        "menuId": "路線網図/その他路線番号_S"
+      },
+      "filter": [
+        "==",
+        [
+          "geometry-type"
         ],
-        "circle-stroke-opacity": 1
+        "Polygon"
+      ],
+      "paint": {
+        "fill-color": "#d661c5",
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "路線網図/その他路線番号_S-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "路線_633_その他路線番号_S",
+      "metadata": {
+        "menuId": "路線網図/その他路線番号_S"
+      },
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "line-color": "#d661c5",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          0.5,
+          20,
+          3
+        ],
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "路線網図/その他路線番号_S-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "路線_633_その他路線番号_S",
+      "metadata": {
+        "menuId": "路線網図/その他路線番号_S"
+      },
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "#d661c5",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1,
+          20,
+          5
+        ]
+      }
+    },
+    {
+      "id": "路線網図/その他路線番号_S-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "路線_633_その他路線番号_S",
+      "metadata": {
+        "menuId": "路線網図/その他路線番号_S"
+      },
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "paint": {
+        "circle-color": "#d661c5",
+        "circle-radius": 7,
+        "circle-stroke-width": 2,
+        "circle-stroke-color": "#fff",
+        "circle-opacity": 0.8
       }
     }
   ]
