@@ -1,0 +1,14 @@
+[
+  {
+    name: '観光',
+    styleUrl: './観光.json'
+  },
+  {
+    name: '防災',
+    styleUrl: '防災.json'
+  },
+  {
+    name: 'イベント',
+    styleUrl: 'イベント.json'
+  }
+]
