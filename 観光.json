@@ -930,9 +930,9 @@
                   34.859311
                 ]
               },
-              "Precipitation": null,
-              "Precipitation10min": null,
-              "Precipitation1hr": null,
+              "Precipitation": 0,
+              "Precipitation10min": 0,
+              "Precipitation1hr": 0,
               "PrecipitationLevel1hr": "1",
               "iconImage": "marker_umbrella_disabled"
             }
@@ -1217,7 +1217,7 @@
                   34.87722222
                 ]
               },
-              "StreamGauge": null,
+              "StreamGauge": 0.12,
               "StreamGaugeLevel": "2",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge02"
@@ -1337,7 +1337,7 @@
                   34.82333333
                 ]
               },
-              "StreamGauge": null,
+              "StreamGauge": 0.15,
               "StreamGaugeLevel": "0",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge_disabled"
@@ -1361,7 +1361,7 @@
                   34.94277778
                 ]
               },
-              "StreamGauge": null,
+              "StreamGauge": 0.11,
               "StreamGaugeLevel": "0",
               "StreamGaugeType": "通常水位計",
               "iconImage": "StreamGauge_disabled"
@@ -21510,360 +21510,111 @@
       }
     },
     {
-      "id": "ふじのくに/防火水槽",
-      "type": "circle",
-      "source": "FirePreventionWaterTank",
-      "layout": {
-        "visibility": "none"
+      "id": "交通分析ダッシュボード-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "53_交通分析ダッシュボード",
+      "metadata": {
+        "menuId": "交通分析ダッシュボード"
       },
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
       "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
+        "fill-color": "#ae01a5",
+        "fill-opacity": 0.7
       }
     },
     {
-      "id": "ふじのくに/防災倉庫",
-      "type": "circle",
-      "source": "DisasterPreventionWarehouse",
-      "layout": {
-        "visibility": "none"
+      "id": "交通分析ダッシュボード-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "53_交通分析ダッシュボード",
+      "metadata": {
+        "menuId": "交通分析ダッシュボード"
       },
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
       "paint": {
-        "circle-color": [
-          "get",
-          "color"
+        "line-color": "#ae01a5",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          0.5,
+          20,
+          3
         ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
+        "line-opacity": 1
       }
     },
     {
-      "id": "ふじのくに/水防倉庫",
-      "type": "circle",
-      "source": "FloodPreventionWarehouse",
-      "layout": {
-        "visibility": "none"
+      "id": "交通分析ダッシュボード-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "53_交通分析ダッシュボード",
+      "metadata": {
+        "menuId": "交通分析ダッシュボード"
       },
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
       "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
+        "line-color": "#ae01a5",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1,
+          20,
+          5
+        ]
       }
     },
     {
-      "id": "ふじのくに/指定津波避難ビル等",
+      "id": "交通分析ダッシュボード-Point",
       "type": "circle",
-      "source": "TsunamiEvacuationBuilding",
-      "layout": {
-        "visibility": "none"
+      "source": "menu-experiment",
+      "source-layer": "53_交通分析ダッシュボード",
+      "metadata": {
+        "menuId": "交通分析ダッシュボード"
       },
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
       "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
+        "circle-color": "#ae01a5",
+        "circle-radius": 7,
         "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
-      }
-    },
-    {
-      "id": "ふじのくに/救護病院",
-      "type": "circle",
-      "source": "ReliefHospital",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
-      }
-    },
-    {
-      "id": "ふじのくに/救護所",
-      "type": "circle",
-      "source": "FirstAidStation",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
-      }
-    },
-    {
-      "id": "ふじのくに/防災用ヘリポート",
-      "type": "circle",
-      "source": "DisasterPreventionHeliport",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
-      }
-    },
-    {
-      "id": "ふじのくに/同報無線子局",
-      "type": "circle",
-      "source": "BroadcastRadioChildStation",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
-      }
-    },
-    {
-      "id": "ふじのくに/飲料水貯水槽",
-      "type": "circle",
-      "source": "DrinkingWaterTank",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
-      }
-    },
-    {
-      "id": "ふじのくに/AED設置場所",
-      "type": "circle",
-      "source": "Aed",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
-      }
-    },
-    {
-      "id": "ふじのくに/指定緊急避難場所",
-      "type": "circle",
-      "source": "EvacuationSpace",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
-      }
-    },
-    {
-      "id": "ふじのくに/土のうステーション",
-      "type": "circle",
-      "source": "SandbagStation",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
-      }
-    },
-    {
-      "id": "ふじのくに/公共施設",
-      "type": "circle",
-      "source": "PublicFacility",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
-      }
-    },
-    {
-      "id": "ふじのくに/観光施設等一覧",
-      "type": "circle",
-      "source": "SightseeingMapStore",
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
-      }
-    },
-    {
-      "id": "ふじのくに/工場併設直売所",
-      "type": "circle",
-      "source": "FactoryDirectSalesPlace",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
-      }
-    },
-    {
-      "id": "ふじのくに/イベント一覧",
-      "type": "circle",
-      "source": "EventList",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
-      }
-    },
-    {
-      "id": "ふじのくに/イベント詳細一覧",
-      "type": "circle",
-      "source": "EventDetail",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
+        "circle-stroke-color": "#fff",
+        "circle-opacity": 0.8
       }
     }
   ]
