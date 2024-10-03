@@ -10,9 +10,5 @@
   {
     "name": "イベント",
     "styleUrl": "https://naogify.github.io/themeMaps/sightseeing.json"
-  },
-  {
-    "name": "避難情報",
-    "styleUrl": "https://naogify.github.io/themeMaps/style.json"
   }
 ]
