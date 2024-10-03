@@ -10,9 +10,5 @@
   {
     "name": "イベント",
     "styleUrl": "https://naogify.github.io/themeMaps/sightseeing.json"
-  },
-  {
-    "name": "防災（浸水）",
-    "styleUrl": "https://naogify.github.io/themeMaps/style.json"
   }
 ]
