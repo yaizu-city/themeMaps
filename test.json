@@ -1,0 +1,1339 @@
+{
+  "version": 8,
+  "name": "GSI Japan + OpenStreetMap based style for Geolonia",
+  "sprite": "https://api.geolonia.com/v1/sprites/gsi",
+  "glyphs": "https://glyphs.geolonia.com/{fontstack}/{range}.pbf",
+  "sources": {
+    "oceanus": {
+      "type": "vector",
+      "url": "https://tileserver.geolonia.com/oceanus/tiles.json?key=YOUR-API-KEY"
+    },
+    "gsi-japan": {
+      "type": "vector",
+      "url": "https://tileserver.geolonia.com/gsi_experimental_bvmap/tiles.json?key=YOUR-API-KEY",
+      "minzoom": 5
+    },
+    "geolonia-water": {
+      "type": "vector",
+      "url": "https://tileserver.geolonia.com/water/tiles.json?key=YOUR-API-KEY"
+    },
+    "geolonia-gsi-custom": {
+      "type": "vector",
+      "url": "https://tileserver.geolonia.com/gsi-extra-v2/tiles.json?key=YOUR-API-KEY"
+    },
+    "dem": {
+      "type": "raster-dem",
+      "url": "https://tileserver.geolonia.com/gsi-dem/tiles.json?key=YOUR-API-KEY",
+      "attribution": "<a href=\"https://www.gsi.go.jp/\" target=\"_blank\">&copy; GSI Japan</a>"
+    },
+    "menu-experiment": {
+      "type": "vector",
+      "url": "https://tileserver.geolonia.com/smartcity-menu-v11/tiles.json?key=YOUR-API-KEY"
+    },
+    "datapng": {
+      "type": "raster",
+      "tiles": [
+        "https://public-data.geolonia.com/yaizu-city/flood_l2_shinsuishin/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "gsidem": {
+      "type": "raster-dem",
+      "url": "https://tileserver.geolonia.com/gsi-dem/tiles.json?key=YOUR-API-KEY"
+    },
+    "EvacuationShelter": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "PrecipitationGauge": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "UnderpassInformation": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "StreamGauge": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "WeatherForecast": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "WeatherAlert": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "DisasterMail": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "FirePreventionWaterTank": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "DisasterPreventionWarehouse": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "FloodPreventionWarehouse": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "TsunamiEvacuationBuilding": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "ReliefHospital": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "FirstAidStation": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "DisasterPreventionHeliport": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "BroadcastRadioChildStation": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "DrinkingWaterTank": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "Aed": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "EvacuationSpace": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "SandbagStation": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "PublicFacility": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "SightseeingMapStore": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "FactoryDirectSalesPlace": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "EventList": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "EventDetail": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "yaizu-alert-area": {
+      "type": "vector",
+      "url": "pmtiles://https://de2kj1j7vldyl.cloudfront.net/sandbox/yaizu-alert-area.pmtiles"
+    },
+    "EvacuationInformationSediment": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "EvacuationInformationFlood": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "EvacuationInformationStormSurge": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "EvacuationInformationTsunami": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "EvacuationInformationEarthquake": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "EvacuationInformationNuclearPower": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    }
+  },
+  "layers": [
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/焼津市全域-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "焼津市全域_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "fill-color": "rgb(199, 21, 133)",
+        "fill-opacity": 0.35
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/焼津市全域"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/焼津市全域-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "焼津市全域_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": 1,
+        "line-opacity": 0.6
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/焼津市全域"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/焼津市全域-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "焼津市全域_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1,
+          20,
+          5
+        ]
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/焼津市全域"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/焼津市全域-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "焼津市全域_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "rgb(199, 21, 133)",
+        "circle-opacity": 0.7,
+        "circle-stroke-width": 1,
+        "circle-stroke-color": "gray",
+        "circle-stroke-opacity": 1
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/焼津市全域"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/志太田中川-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "志太田中川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "fill-color": "rgb(199, 21, 133)",
+        "fill-opacity": 0.35
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/志太田中川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/志太田中川-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "志太田中川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": 1,
+        "line-opacity": 0.6
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/志太田中川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/志太田中川-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "志太田中川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1,
+          20,
+          5
+        ]
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/志太田中川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/志太田中川-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "志太田中川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "rgb(199, 21, 133)",
+        "circle-opacity": 0.7,
+        "circle-stroke-width": 1,
+        "circle-stroke-color": "gray",
+        "circle-stroke-opacity": 1
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/志太田中川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/瀬戸川-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "瀬戸川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "fill-color": "rgb(199, 21, 133)",
+        "fill-opacity": 0.35
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/瀬戸川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/瀬戸川-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "瀬戸川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": 1,
+        "line-opacity": 0.6
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/瀬戸川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/瀬戸川-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "瀬戸川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1,
+          20,
+          5
+        ]
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/瀬戸川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/瀬戸川-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "瀬戸川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "rgb(199, 21, 133)",
+        "circle-opacity": 0.7,
+        "circle-stroke-width": 1,
+        "circle-stroke-color": "gray",
+        "circle-stroke-opacity": 1
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/瀬戸川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/葉梨川-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "葉梨川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "fill-color": "rgb(199, 21, 133)",
+        "fill-opacity": 0.35
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/葉梨川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/葉梨川-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "葉梨川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": 1,
+        "line-opacity": 0.6
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/葉梨川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/葉梨川-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "葉梨川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1,
+          20,
+          5
+        ]
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/葉梨川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/葉梨川-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "葉梨川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "rgb(199, 21, 133)",
+        "circle-opacity": 0.7,
+        "circle-stroke-width": 1,
+        "circle-stroke-color": "gray",
+        "circle-stroke-opacity": 1
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/葉梨川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/朝比奈川-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "朝比奈川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "fill-color": "rgb(199, 21, 133)",
+        "fill-opacity": 0.35
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/朝比奈川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/朝比奈川-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "朝比奈川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": 1,
+        "line-opacity": 0.6
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/朝比奈川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/朝比奈川-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "朝比奈川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1,
+          20,
+          5
+        ]
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/朝比奈川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/朝比奈川-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "朝比奈川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "rgb(199, 21, 133)",
+        "circle-opacity": 0.7,
+        "circle-stroke-width": 1,
+        "circle-stroke-color": "gray",
+        "circle-stroke-opacity": 1
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/朝比奈川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/大井川-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "大井川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "fill-color": "rgb(199, 21, 133)",
+        "fill-opacity": 0.35
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/大井川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/大井川-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "大井川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": 1,
+        "line-opacity": 0.6
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/大井川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/大井川-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "大井川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1,
+          20,
+          5
+        ]
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/大井川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/大井川-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "大井川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "rgb(199, 21, 133)",
+        "circle-opacity": 0.7,
+        "circle-stroke-width": 1,
+        "circle-stroke-color": "gray",
+        "circle-stroke-opacity": 1
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/大井川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/大津谷川-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "大津谷川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "fill-color": "rgb(199, 21, 133)",
+        "fill-opacity": 0.35
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/大津谷川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/大津谷川-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "大津谷川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": 1,
+        "line-opacity": 0.6
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/大津谷川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/大津谷川-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "大津谷川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1,
+          20,
+          5
+        ]
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/大津谷川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/大津谷川-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "大津谷川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "rgb(199, 21, 133)",
+        "circle-opacity": 0.7,
+        "circle-stroke-width": 1,
+        "circle-stroke-color": "gray",
+        "circle-stroke-opacity": 1
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/大津谷川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/栃山川-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "栃山川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "fill-color": "rgb(199, 21, 133)",
+        "fill-opacity": 0.35
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/栃山川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/栃山川-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "栃山川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": 1,
+        "line-opacity": 0.6
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/栃山川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/栃山川-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "栃山川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1,
+          20,
+          5
+        ]
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/栃山川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（河岸侵食）/栃山川-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "栃山川_家屋倒壊等氾濫想定（河岸侵食）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "rgb(199, 21, 133)",
+        "circle-opacity": 0.7,
+        "circle-stroke-width": 1,
+        "circle-stroke-color": "gray",
+        "circle-stroke-opacity": 1
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（河岸侵食）/栃山川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（氾濫流）/焼津市全域-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "焼津市全域_家屋倒壊等氾濫想定（氾濫流）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "fill-color": "rgb(199, 21, 133)",
+        "fill-opacity": 0.35
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（氾濫流）/焼津市全域"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（氾濫流）/焼津市全域-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "焼津市全域_家屋倒壊等氾濫想定（氾濫流）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": 1,
+        "line-opacity": 0.6
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（氾濫流）/焼津市全域"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（氾濫流）/焼津市全域-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "焼津市全域_家屋倒壊等氾濫想定（氾濫流）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1,
+          20,
+          5
+        ]
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（氾濫流）/焼津市全域"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（氾濫流）/焼津市全域-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "焼津市全域_家屋倒壊等氾濫想定（氾濫流）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "rgb(199, 21, 133)",
+        "circle-opacity": 0.7,
+        "circle-stroke-width": 1,
+        "circle-stroke-color": "gray",
+        "circle-stroke-opacity": 1
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（氾濫流）/焼津市全域"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（氾濫流）/大井川-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "大井川_家屋倒壊等氾濫想定（氾濫流）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "fill-color": "rgb(199, 21, 133)",
+        "fill-opacity": 0.35
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（氾濫流）/大井川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（氾濫流）/大井川-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "大井川_家屋倒壊等氾濫想定（氾濫流）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": 1,
+        "line-opacity": 0.6
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（氾濫流）/大井川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（氾濫流）/大井川-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "大井川_家屋倒壊等氾濫想定（氾濫流）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1,
+          20,
+          5
+        ]
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（氾濫流）/大井川"
+      }
+    },
+    {
+      "id": "家屋倒壊等氾濫想定（氾濫流）/大井川-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "大井川_家屋倒壊等氾濫想定（氾濫流）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "rgb(199, 21, 133)",
+        "circle-opacity": 0.7,
+        "circle-stroke-width": 1,
+        "circle-stroke-color": "gray",
+        "circle-stroke-opacity": 1
+      },
+      "metadata": {
+        "menuId": "家屋倒壊等氾濫想定（氾濫流）/大井川"
+      }
+    },
+    {
+      "id": "洪水浸水想定区域（想定最大規模）/焼津市全域",
+      "type": "raster",
+      "source": "datapng",
+      "paint": {
+        "raster-opacity": 0.8
+      }
+    },
+    {
+      "id": "洪水浸水想定区域（想定最大規模）/焼津市全域-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "全域_洪水浸水想定区域（想定最大規模）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "fill-color": "rgb(199, 21, 133)",
+        "fill-opacity": 0.35
+      },
+      "metadata": {
+        "menuId": "洪水浸水想定区域（想定最大規模）/焼津市全域"
+      }
+    },
+    {
+      "id": "洪水浸水想定区域（想定最大規模）/焼津市全域-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "全域_洪水浸水想定区域（想定最大規模）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": 1,
+        "line-opacity": 0.6
+      },
+      "metadata": {
+        "menuId": "洪水浸水想定区域（想定最大規模）/焼津市全域"
+      }
+    },
+    {
+      "id": "洪水浸水想定区域（想定最大規模）/焼津市全域-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "全域_洪水浸水想定区域（想定最大規模）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          1,
+          20,
+          5
+        ]
+      },
+      "metadata": {
+        "menuId": "洪水浸水想定区域（想定最大規模）/焼津市全域"
+      }
+    },
+    {
+      "id": "洪水浸水想定区域（想定最大規模）/焼津市全域-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "全域_洪水浸水想定区域（想定最大規模）",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "rgb(199, 21, 133)",
+        "circle-opacity": 0.7,
+        "circle-stroke-width": 1,
+        "circle-stroke-color": "gray",
+        "circle-stroke-opacity": 1
+      },
+      "metadata": {
+        "menuId": "洪水浸水想定区域（想定最大規模）/焼津市全域"
+      }
+    }
+  ]
+}
