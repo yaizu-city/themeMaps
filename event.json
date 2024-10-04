@@ -30,6 +30,20 @@
       "type": "vector",
       "url": "https://tileserver.geolonia.com/smartcity-menu-v11/tiles.json?key=YOUR-API-KEY"
     },
+    "yaizu-alert-area": {
+      "type": "vector",
+      "url": "pmtiles://https://de2kj1j7vldyl.cloudfront.net/sandbox/yaizu-alert-area.pmtiles"
+    },
+    "datapng": {
+      "type": "raster",
+      "tiles": [
+        "https://public-data.geolonia.com/yaizu-city/flood_l2_shinsuishin/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
     "gsidem": {
       "type": "raster-dem",
       "url": "https://tileserver.geolonia.com/gsi-dem/tiles.json?key=YOUR-API-KEY"
@@ -56,6 +70,27 @@
       }
     },
     "StreamGauge": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "WeatherForecast": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "WeatherAlert": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "DisasterMail": {
       "type": "geojson",
       "data": {
         "type": "FeatureCollection",
@@ -181,45 +216,6 @@
         "features": []
       }
     },
-    "yaizu-alert-area": {
-      "type": "vector",
-      "url": "pmtiles://https://de2kj1j7vldyl.cloudfront.net/sandbox/yaizu-alert-area.pmtiles"
-    },
-    "mapbox-gl-draw-cold": {
-      "data": {
-        "type": "FeatureCollection",
-        "features": []
-      },
-      "type": "geojson"
-    },
-    "mapbox-gl-draw-hot": {
-      "data": {
-        "type": "FeatureCollection",
-        "features": [
-          {
-            "type": "Feature",
-            "properties": {
-              "id": "a17f603d5bb0efd2622d1acb413abc43",
-              "meta": "feature",
-              "meta:type": "Point",
-              "active": "false",
-              "mode": "simple_select",
-              "user_marker-color": "#e93f53",
-              "user_stroke": "#e93f53",
-              "user_fill": "#e93f53"
-            },
-            "geometry": {
-              "coordinates": [
-                138.24234008789062,
-                34.578669736846834
-              ],
-              "type": "Point"
-            }
-          }
-        ]
-      },
-      "type": "geojson"
-    },
     "EvacuationInformationSediment": {
       "type": "geojson",
       "data": {
@@ -265,234 +261,6 @@
   },
   "layers": [
     {
-      "id": "ふじのくに/観光施設等一覧",
-      "type": "circle",
-      "source": "SightseeingMapStore",
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
-      },
-      "metadata": {
-        "menuId": "ふじのくに/観光施設等一覧"
-      }
-    },
-    {
-      "id": "防災情報/避難所開設状況",
-      "type": "symbol",
-      "source": "EvacuationShelter",
-      "layout": {
-        "icon-image": [
-          "get",
-          "iconImage"
-        ],
-        "icon-size": 0.5,
-        "icon-allow-overlap": true,
-        "text-size": 12,
-        "text-anchor": "top",
-        "text-offset": [
-          0,
-          1
-        ],
-        "text-allow-overlap": true,
-        "visibility": "none"
-      },
-      "metadata": {
-        "menuId": "防災情報/避難所開設状況"
-      }
-    },
-    {
-      "id": "防災情報/雨量計",
-      "type": "symbol",
-      "source": "PrecipitationGauge",
-      "layout": {
-        "icon-image": [
-          "get",
-          "iconImage"
-        ],
-        "icon-size": 0.5,
-        "icon-allow-overlap": true,
-        "text-size": 12,
-        "text-anchor": "top",
-        "text-offset": [
-          0,
-          1
-        ],
-        "text-allow-overlap": true,
-        "visibility": "none"
-      },
-      "metadata": {
-        "menuId": "防災情報/雨量計"
-      }
-    },
-    {
-      "id": "防災情報/冠水センサー",
-      "type": "symbol",
-      "source": "UnderpassInformation",
-      "layout": {
-        "icon-image": [
-          "get",
-          "iconImage"
-        ],
-        "icon-size": 0.5,
-        "icon-allow-overlap": true,
-        "text-size": 12,
-        "text-anchor": "top",
-        "text-offset": [
-          0,
-          1
-        ],
-        "text-allow-overlap": true,
-        "visibility": "none"
-      },
-      "metadata": {
-        "menuId": "防災情報/冠水センサー"
-      }
-    },
-    {
-      "id": "防災情報/河川水位計",
-      "type": "symbol",
-      "source": "StreamGauge",
-      "layout": {
-        "icon-image": [
-          "get",
-          "iconImage"
-        ],
-        "icon-size": 0.5,
-        "icon-allow-overlap": true,
-        "text-size": 12,
-        "text-anchor": "top",
-        "text-offset": [
-          0,
-          1
-        ],
-        "text-allow-overlap": true,
-        "visibility": "none"
-      },
-      "metadata": {
-        "menuId": "防災情報/河川水位計"
-      }
-    },
-    {
-      "id": "ふじのくに/イベント一覧-Polygon",
-      "type": "fill",
-      "source": "menu-experiment",
-      "source-layer": "EventList",
-      "filter": [
-        "==",
-        [
-          "geometry-type"
-        ],
-        "Polygon"
-      ],
-      "paint": {
-        "fill-color": "#e1c8a2",
-        "fill-opacity": 0.7
-      },
-      "metadata": {
-        "menuId": "ふじのくに/イベント一覧"
-      }
-    },
-    {
-      "id": "ふじのくに/イベント一覧-Polygon-outline",
-      "type": "line",
-      "source": "menu-experiment",
-      "source-layer": "EventList",
-      "filter": [
-        "==",
-        [
-          "geometry-type"
-        ],
-        "Polygon"
-      ],
-      "paint": {
-        "line-color": "#e1c8a2",
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          10,
-          0.5,
-          20,
-          3
-        ],
-        "line-opacity": 1
-      },
-      "metadata": {
-        "menuId": "ふじのくに/イベント一覧"
-      }
-    },
-    {
-      "id": "ふじのくに/イベント一覧-LineString",
-      "type": "line",
-      "source": "menu-experiment",
-      "source-layer": "EventList",
-      "filter": [
-        "==",
-        [
-          "geometry-type"
-        ],
-        "LineString"
-      ],
-      "paint": {
-        "line-color": "#e1c8a2",
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          12,
-          1,
-          20,
-          5
-        ]
-      },
-      "metadata": {
-        "menuId": "ふじのくに/イベント一覧"
-      }
-    },
-    {
-      "id": "ふじのくに/イベント一覧-Point",
-      "type": "circle",
-      "source": "menu-experiment",
-      "source-layer": "EventList",
-      "filter": [
-        "==",
-        [
-          "geometry-type"
-        ],
-        "Point"
-      ],
-      "paint": {
-        "circle-color": "#e1c8a2",
-        "circle-radius": 7,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": "#fff",
-        "circle-opacity": 0.8
-      },
-      "metadata": {
-        "menuId": "ふじのくに/イベント一覧"
-      }
-    },
-    {
       "id": "ふじのくに/イベント一覧",
       "type": "circle",
       "source": "EventList",
@@ -511,6 +279,27 @@
       },
       "metadata": {
         "menuId": "ふじのくに/イベント一覧"
+      }
+    },
+    {
+      "id": "ふじのくに/イベント詳細一覧",
+      "type": "circle",
+      "source": "EventDetail",
+      "paint": {
+        "circle-color": [
+          "get",
+          "color"
+        ],
+        "circle-opacity": 0.5,
+        "circle-stroke-width": 2,
+        "circle-stroke-color": [
+          "get",
+          "color"
+        ],
+        "circle-stroke-opacity": 1
+      },
+      "metadata": {
+        "menuId": "ふじのくに/イベント詳細一覧"
       }
     }
   ]
