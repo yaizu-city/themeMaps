@@ -261,9 +261,9 @@
   },
   "layers": [
     {
-      "id": "ふじのくに/イベント一覧",
+      "id": "ふじのくに/観光施設等一覧",
       "type": "circle",
-      "source": "EventList",
+      "source": "SightseeingMapStore",
       "paint": {
         "circle-color": [
           "get",
@@ -278,28 +278,7 @@
         "circle-stroke-opacity": 1
       },
       "metadata": {
-        "menuId": "ふじのくに/イベント一覧"
-      }
-    },
-    {
-      "id": "ふじのくに/イベント詳細一覧",
-      "type": "circle",
-      "source": "EventDetail",
-      "paint": {
-        "circle-color": [
-          "get",
-          "color"
-        ],
-        "circle-opacity": 0.5,
-        "circle-stroke-width": 2,
-        "circle-stroke-color": [
-          "get",
-          "color"
-        ],
-        "circle-stroke-opacity": 1
-      },
-      "metadata": {
-        "menuId": "ふじのくに/イベント詳細一覧"
+        "menuId": "ふじのくに/観光施設等一覧"
       }
     }
   ]
