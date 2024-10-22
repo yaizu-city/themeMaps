@@ -10,9 +10,5 @@
   {
     "name": "イベント",
     "styleUrl": "https://yaizu-city.github.io/themeMaps/event.txt"
-  },
-  {
-    "name": "防災（浸水系）",
-    "styleUrl": "https://yaizu-city.github.io/themeMaps/style.txt"
   }
 ]
