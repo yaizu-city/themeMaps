@@ -11,15 +11,15 @@
 [
   {
     "name": "観光",
-    "styleUrl": "https://naogify.github.io/themeMaps/sightseeing.json"
+    "styleUrl": "https://naogify.github.io/themeMaps/sightseeing.txt"
   },
   {
     "name": "防災",
-    "styleUrl": "https://naogify.github.io/themeMaps/disaster.json"
+    "styleUrl": "https://naogify.github.io/themeMaps/disaster.txt"
   },
   {
     "name": "イベント",
-    "styleUrl": "https://naogify.github.io/themeMaps/event.json"
+    "styleUrl": "https://naogify.github.io/themeMaps/event.txt"
   }
 ]
 ```
